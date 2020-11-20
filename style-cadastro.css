@@ -1,0 +1,159 @@
+body, h1, h2, p, ul, li, a{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+a{
+  text-decoration: none;
+}
+*{
+  box-sizing: border-box;
+}
+/*Header*/
+.menu-bg{
+  background-color: #222;
+}
+.menu h1, a{
+  color: white;
+}
+.container-menu{
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+.logo img{
+  height: 1.25em;
+}
+.logo a{
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 15px 10px;
+}
+.nav-menu ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.nav-menu a{
+  display: block;
+  padding: 10px 15px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+.nav-menu a:hover{
+  color: rgb(31, 175, 31);
+}
+/*Conteudo*/
+.container-textos{
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: flex-start;
+  border-bottom: 2px solid rgb(31, 175, 31);
+  margin: 20px 80px 50px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  align-items: center;
+  justify-content: center;
+  margin:60px auto;
+}
+.titulo h1{
+  max-width: 960px;
+  font-size: 2em;
+  padding: 10px;
+}
+.titulo a{
+  color: rgb(31, 175, 31);
+}
+
+.contato {
+width: 100%;
+padding: 10px;
+align-self: flex-start;
+}
+
+.form {
+display: flex;
+flex-direction: column;
+align-self: flex-start;
+}
+.field {
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #dddddd;
+border-radius: 10px;
+height: 50px;
+width: 500px;
+align-self: flex-start;
+}
+.btn {
+  width: 70%;
+  align-self: center;
+  cursor: pointer;
+}
+
+/*Footer*/
+.container-footer{
+width: 100%;
+display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top:10px;
+  background-color: #222;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.redes-sociais{
+  margin: 0 auto;
+  padding: 10px;
+}
+.redes-sociais img{
+  height: 2.5em;
+  margin: 20px;
+}
+
+@media (max-width: 600px){
+  .menu-bg{
+    text-align: center;
+  }
+  .container-menu{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .container-menu ul{
+    display: inline-block;
+    text-align: center;
+  }
+  .field{
+    max-width: 300px;
+    border: none;
+  }
+  .form{
+    margin-left: -80px;
+  }
+  .container-textos{
+    border: none;
+    margin-bottom: 0;
+  }
+}

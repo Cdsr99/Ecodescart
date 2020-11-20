@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Cadastro</title>
+  <link rel="icon"  href="img/folha.ico"/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="style-cadastro.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="menu-bg">
+      <div class="container-menu">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/folha.svg">
+            Ecodescarte
+          </a>
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="contato.html">Contato</a>
+            <li><a href="sobre.html">Sobre</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="titulo">
+      <h1>Tem alguma sugestão de um novo posto de coleta?<br>Preencha o formulário abaixo que iremos verificar =D<br>
+      Para ver a nossa lista de postos de coleta clique <a class="" href="postos.html">aqui</a>.</h1>
+    </div>
+
+    <div class="container-textos">
+      <div class="contato">
+        <form class="form" action="cadastro.php" method="POST">
+          <input class="field" placeholder="Nome e Sobrenome" name="nome" id="nome">
+          <input class="field" placeholder="CPF" name="cpf" id="cpf">
+          <input class="field" placeholder="Celular" name="celular" id="celular">
+          <input class="field" placeholder="Bairro" name="bairro" id="bairro">
+          <input class="field" placeholder="Cidade" name="cidade" id="cidade">
+          <input class="field" placeholder="Endereço" name="endereco" id="endereco">
+          <input class="field" placeholder="Número" name="n" id="n">
+          <input class="field btn" type="submit" value="Enviar">
+        </form>
+      </div>
+    </div>
+  </section>
+
+      <footer class="container-footer">
+        <div class="copyright">
+          <p>&copy;Copyright 2020</p>
+        </div>
+        <div class="redes-sociais">
+          <a class="btn-facebook" href="#"><img src="img/ico-fb.png" alt="facebook"></a>
+          <a class="btn-instagram" href="#"><img src="img/ico-ig.png" alt="instagram"></a>
+          <a class="btn-twitter" href="#"><img src="img/ico-tt.png" alt="twitter"></a>
+        </div>
+      </footer>
+
+</body>
+</html>
